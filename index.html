@@ -25,7 +25,7 @@
 
 
   <title>Monte Carlo Tree Diffusion for System 2 Planning</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/mctd.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,18 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      }
+    };
+  </script>
 </head>
 <body>
 
@@ -52,74 +64,78 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Monte Carlo Tree Diffusion for System 2 Planning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://jaesikyoon.com" target="_blank">Jaesik Yoon</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                Hyeonseo Cho<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Doojin Baek<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yoshuabengio.org" target="_blank">Yoshua Bengio</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://mlml.kaist.ac.kr/sungjinahn" target="_blank">Sungjin Ahn</a><sup>1,4</sup>
+              </span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>KAIST, <sup>2</sup>SAP, <sup>3</sup>Mila, <sup>4</sup>NYU<br>ICML 2025, <span style="color: #8FBC8F; font-style: italic;">Spotlight (top 2.5% of submissions)</span></span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                     <!-- Arxiv PDF link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://openreview.net/pdf?id=XrCbBdycDc" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Paper</span>
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+                <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://github.com/ahn-ml/mctd" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fab fa-github"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Code</span>
                 </a>
               </span>
-            </div>
-          </div>
+
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2502.07202" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://wandb.ai/jaesikyoon/jaesik_mctd" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="static/images/wandb.svg" alt="wandb" style="height: 1.2em; vertical-align: middle;">
+                </span>
+                <span>wandb log</span>
+              </a>
+            </span>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 
@@ -127,13 +143,13 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <div class="banner-videos" style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+        <video src="static/videos/banner_video1.mp4" autoplay muted loop controls style="max-width: 32%; height: auto;"></video>
+        <video src="static/videos/banner_video2.mp4" autoplay muted loop controls style="max-width: 32%; height: auto;"></video>
+        <video src="static/videos/banner_video3.mp4" autoplay muted loop controls style="max-width: 32%; height: auto;"></video>
+      </div>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Using a tree-search-based denoising approach, MCTD broadens its generation diversity and improves performance on complex behavior planning tasks at inference phase.
       </h2>
     </div>
   </div>
@@ -148,7 +164,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Diffusion models have recently emerged as a powerful tool for planning. However, unlike Monte Carlo Tree Search (MCTS)—whose performance naturally improves with inference-time computation scaling—standard diffusion‐based planners offer only limited avenues for the scalability. In this paper, we introduce Monte Carlo Tree Diffusion (MCTD), a novel framework that integrates the generative strength of diffusion models with the adaptive search capabilities of MCTS. Our method reconceptualizes denoising as a tree‐structured process, allowing partially denoised plans to be iteratively evaluated, pruned, and refined. By selectively expanding promising trajectories while retaining the flexibility to revisit and improve suboptimal branches, MCTD achieves the benefits of MCTS such as controlling exploration-exploitation trade-offs within the diffusion framework. Empirical results on challenging long‐horizon tasks show that MCTD outperforms diffusion baselines, yielding higher‐quality solutions as inference-time computation increases. 
           </p>
         </div>
       </div>
@@ -157,128 +173,215 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<!-- Paper main body -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Monte Carlo Tree Diffusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            Monte Carlo Tree Diffusion consists of the three key concepts to enable the tree-structured planning. (1) Denoising as Tree-Rollout, (2) Guidance Levels as meta-Actions, and (3) Jumpy Denoising as Simulation. These innovations form the foundation of MCTD, bridging the gap between traditional tree search methods and diffusion-based planning.
+            <br>
+            <br>
+            <img src="static/images/mctd_overview.png" alt="MCTD Overview" style="width: 100%; height: auto;">
+            <br>
+            <br>
+          </p>
+        </div>
+        <h3 class="title is-4">Denoising as Tree-Rollout</h3>
+        <div class="content has-text-justified">
+          <p>
+            Unlike a standard Diffusion model, our approach partitions the trajectory $\mathbf{x}$ into $S$ subplans, $\mathbf{x}=[\mathbf{x}_1,\mathbf{x}_2,\dots,\mathbf{x}_S]$, and assigns a separate denoising schedule to each subplan, $\mathbf{x}_s$-faster for the earlier segments and slower for the later ones. This makes the process causal and semi-autoregressive, so that the future is denoised based on the already refined past.
+            $$
+            \begin{align}
+            p(\mathbf{x}) \approx \prod_{s=1}^S p(\mathbf{x}_s|\mathbf{x}_{1:s-1})
+            \end{align}
+            $$
+            Different from the standard Monte Carlo Tree Search over state space, MCTD operates at a higher level of abstraction, subplan, to enable more efficient and scalable tree search.
+            <br>
+            <br>
+          </p>
+        </div>
+        <h3 class="title is-4">Guidance Levels as Meta-Actions</h3>
+        <div class="content has-text-justified">
+          <p>
+            To search the tree over the subplan space, MCTD uses guidance levels as meta-actions to control the exploration-exploitation trade-off.
+            For instance, let's consider the two guidance levels: $\text{GUIDE}$ and $\text{NO_GUIDE}$. Sampling from the guidance level $\text{NO_GUIDE}$ is the sampling from the prior distribution $p(\mathbf{x})$ trained from the offline data. This corresponds to the exploratory behavior. Conversely, sampling from the guidance level $\text{GUIDE}$ is the sampling from the goal-directed distribution $p_g(\mathbf{x})$, such as through classifier-guided diffusion (<a href="https://arxiv.org/abs/2105.05233" target="_blank" style="color: #00A1D6; text-decoration: none;">Dhariwal & Nichol, 2021</a>), which represents the exploitative behavior.
+            By dynamically adjusting the guidance levels $g_s$ for each subplan $\mathbf{x}_s$, MCTD can balance the exploration-exploitation trade-off at the level of subplans within a single denoising process.
+            $$
+            p(\mathbf{x}|\mathbf{g}) \approx \prod_{s=1}^S p(\mathbf{x}_s|\mathbf{x}_{1:s-1}, g_s)
+            $$
+            As a result, this approach enables efficient and scalable planning, even in complex or continuous action spaces.
+            <br>
+            <br>
+          </p>
+        </div>
+        <h3 class="title is-4">Jumpy Denoising as Fast Simulation</h3>
+        <div class="content has-text-justified">
+          <p>
+            To simulate the tree-rollout process efficiently, MCTD employs the fast jumpy denoising process based on the Denoising Diffusion Implicit Model (DDIM) (<a href="https://arxiv.org/abs/2010.02502" target="_blank" style="color: #00A1D6; text-decoration: none;">Song et al., 2020</a>). Specifically, when the tree-rollout denoising process has progressed up to the \( s \)-th subplan, the remaining steps are denoised quickly by skipping every $C$ step:  
+            $$
+            \tilde{\mathbf{x}}_{s+1:S} \sim p(\mathbf{x}_{s+1:S}|\mathbf{x}_{1:s}, \mathbf{g}).  
+            $$
+            This produces a full trajectory \( \tilde{\mathbf{x}} = (\mathbf{x}_{1:s}, \tilde{\mathbf{x}}_{s+1:S})\), which is then evaluated using the reward function \( r(\tilde{\mathbf{x}}) \). While this fast denoising process may introduce larger approximation errors, it is highly computationally efficient, making it well-suited for the simulation step in MCTD. 
+            <br>
+            <br>
+          </p>
+        </div>
+        <h3 class="title is-4">Four Canonical Steps of MCTD</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our framework instantiates these three components through a modified MCTS approach, where the four canonical steps are adapted to handle subplan generation within the diffusion-based planning process.
+            <br>
+            <br>
+            <div style="text-align: center;">
+              <img src="static/images/mctd_algorithm.png" alt="MCTD Algorithm" style="width: 60%; height: auto; display: block; margin: 0 auto;">
+            </div>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End paper main body -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+<!-- Paper experimental results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            MCTD outperforms the previous diffusion-based planners on diverse planning tasks such as long-horizon maze, robot arm manipulation, and partially observable & visual long-horizon maze tasks.
+            <br>
+            <br>
+            <img src="static/images/maze_result_table.png" alt="MCTD Maze Results" style="width: 100%; height: auto;">
+            <br>
+            <br>
+            <img src="static/images/cube_result_table.png" alt="MCTD Cube Results" style="width: 100%; height: auto;">
+            <br>
+            <br>
+            <img src="static/images/vmaze_result_table.png" alt="MCTD V-Maze Results" style="width: 100%; height: auto;">
+            <br>
+            <br>
+            As inference-time computation budget increases, MCTD shows its scalability with consistently achieving better performances.
+            <br>
+            <br>
+            <img src="static/images/ttc_plots2.png" alt="MCTD TTC Results" style="width: 100%; height: auto;">
+            <br>
+            <br>
+          </p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <h3 class="title is-4">Qualitative Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            <figure style="text-align: center;">
+              <img src="static/images/pointmaze_qualitative_result.png" alt="PointMaze Qualitative Results" style="width: 80%; height: auto; display: block; margin: 0 auto;">
+              <figcaption style="margin-top: 8px; font-size: 1em; color: #555;">Plan and Interaction on PointMaze</figcaption>
+            </figure>
+            <figure style="text-align: center;">
+              <div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+                <video src="static/videos/banner_video1.mp4" autoplay muted loop controls style="max-width: 32%; height: auto;"></video>
+                <video src="static/videos/banner_video2.mp4" autoplay muted loop controls style="max-width: 32%; height: auto;"></video>
+                <video src="static/videos/banner_video3.mp4" autoplay muted loop controls style="max-width: 32%; height: auto;"></video>
+              </div>
+              <figcaption style="margin-top: 8px; font-size: 1em; color: #555;">MCTD Causal Denoising Process</figcaption>
+            </figure>
+            <figure style="text-align: center;">
+              <div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+                <img src="static/videos/cube-single-sample1.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 1">
+                <img src="static/videos/cube-single-sample2.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 2">
+                <img src="static/videos/cube-single-sample3.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 3">
+                <img src="static/videos/cube-single-sample4.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 4">
+                <img src="static/videos/cube-single-sample5.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 5">
+              </div>
+              <div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+                <img src="static/videos/cube-double-sample1.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 1">
+                <img src="static/videos/cube-double-sample2.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 2">
+                <img src="static/videos/cube-double-sample3.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 3">
+                <img src="static/videos/cube-double-sample4.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 4">
+                <img src="static/videos/cube-double-sample5.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 5">
+              </div>
+              <div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+                <img src="static/videos/cube-triple-sample1-new.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 1">
+                <img src="static/videos/cube-triple-sample2-new.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 2">
+                <img src="static/videos/cube-triple-sample3-new.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 3">
+                <img src="static/videos/cube-triple-sample4-new.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 4">
+                <img src="static/videos/cube-triple-sample5-new.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 5">
+              </div>
+              <div style="display: flex; gap: 16px; justify-content: center; align-items: center;">
+                <img src="static/videos/cube-quadruple-sample1.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 1">
+                <img src="static/videos/cube-quadruple-sample2.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 2">
+                <img src="static/videos/cube-quadruple-sample3.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 3">
+                <img src="static/videos/cube-quadruple-sample4.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 4">
+                <img src="static/videos/cube-quadruple-sample5.gif" style="max-width: 18%; height: auto;" alt="Cube Sample 5">
+              </div>
+              <figcaption style="margin-top: 8px; font-size: 1em; color: #555;">MCTD's Plan Execution on Robot Arm Manipulation Tasks</figcaption>
+            </figure>
+            <figure style="text-align: center;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; margin: 20px 0;">
+                <div style="flex: 1.8; text-align: center;">
+                  <img src="static/images/vmaze_overview.png" alt="V-Maze Overview" style="width: 100%; height: auto;">
+                </div>
+                <div style="flex: 0.5; text-align: center;">
+                  <video autoplay loop muted playsinline controls style="width: 100%; height: auto;">
+                    <source src="static/videos/vmaze_diffusion_forcing.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p style="margin-top: 10px; font-size: 0.9em;">Diffusion Forcing</p>
+                </div>
+                <div style="flex: 0.5; text-align: center;">
+                  <video autoplay loop muted playsinline controls style="width: 100%; height: auto;">
+                    <source src="static/videos/vmaze_mctd.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <p style="margin-top: 10px; font-size: 0.9em;">MCTD</p>
+                </div>
+              </div>
+              <figcaption style="margin-top: 8px; font-size: 1em; color: #555;">Plan Execution on Partially Observable Maze Visual Task</figcaption>
+            </figure>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End paper experimental results -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<!-- paper conclusion -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduced Monte Carlo Tree Diffusion (MCTD), a framework designed to combine the best of both worlds: the structured search of Monte Carlo Tree Search and the generative flexibility of diffusion planning to enhance the inference-time scalability of System 2 planning. MCTD leverages meta-actions for adaptive exploration-exploitation, tree-structured denoising for efficient diffusion-based expansion, and fast jumpy denoising for rapid simulation. Experimental results demonstrate that MCTD outperforms existing approaches in various planning tasks, achieving superior scalability and solution quality. Future work will explore adaptive compute allocation, learning-based meta-action selection, and reward shaping to further enhance performance, paving the way for more scalable and flexible System 2 planning.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<!-- End paper conclusion -->
+
+
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @inproceedings{mctd,
+          title={Monte Carlo Tree Diffusion for System 2 Planning},
+          author={Yoon, Jaesik and Cho, Hyeonseo and Baek, Doojin and Bengio, Yoshua and Ahn, Sungjin},
+          booktitle={International Conference on Machine Learning},
+          year={2025},
+        }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -291,7 +394,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
